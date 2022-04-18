@@ -39,27 +39,33 @@
 
     <section>
         <h2>connect</h2>
-        <a class="center" href="mailto:mojahmed93@gmail.com">mojahmed93@gmail.com</a>
+        <a href="mailto:mojahmed93@gmail.com">mojahmed93@gmail.com</a>
     </section>
 
     <section>
         <h2>Leave a Message</h2>
-        <form action="/ method=" post">
+        <form name="Leave_Message">
 
-            <label for="name">Name:<br><input type="text" id="name=" name="user_name" required></label>
+
+            <label for="name">Name:<br><input type="text" id="name=" name="user_name" required
+                    placeholder="your name"></label>
             <br>
-            <label for="mail">Email Address:<br><input type="email" id=mail name="user_name" required></label>
+            <label for="mail">Email:<br><input type="email" id=mail name="user_email" required
+                    placeholder="Email Address"></label>
             <br>
-            <label for="msg">Message<br><textarea id="msg" name="user_message"></textarea></label>
+            <label for="msg">Message<br><textarea id="msg" name="user_message" rows="5" cols="10"></textarea></label>
             <br>
-            <label for="">
-                <button type="submit">Submit</button>
+
+            <button type="submit">Submit</button>
             </label>
+
+
+
 
 
         </form>
     </section>
-    <section id="message">
+    <section id="messages">
         <h2>Messages</h2>
         <ul>
 
