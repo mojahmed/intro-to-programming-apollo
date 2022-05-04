@@ -4,9 +4,14 @@ var thisYear = today.getFullYear();
 
 
 let footer = document.querySelector("footer");
-let copyright = document.createElement("p")
-copyright.innerHTML = `${thisYear} Mohammed`;
-footer.appendChild(copyright);
+
+if (footer) {
+    let copyright = document.createElement("p")
+    copyright.innerHTML = `© ${thisYear} Mohammed Ahmed`;
+    footer.appendChild(copyright);
+
+}
+
 
 let skills = ["HTML", "Css", "JavaScript"];
 let skillsSection = document.getElementById("skills");
@@ -22,15 +27,15 @@ for (let i = 0; i < skills.length; i++) {
 let messageForm = document.getElementsByName("Leave_Message")[0];
 
 messageForm.addEventListener("submit", function (event) {
-
+    event.preventDefault();
 
 
     let name = event.target.user_name.value;
     let email = event.target.user_email.value;
     let message = event.target.user_message.value;
     console.log(name, email, message);
-    event.preventDefault();
-    messageForm.reset();
+
+    event.target.reset();
 
     // Display Messages 
     let messageSection = document.getElementById("messages");

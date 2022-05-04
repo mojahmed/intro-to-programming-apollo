@@ -6,61 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
+    <link rel="stylesheet" href="./CSS/index.css">
 </head>
 
 <body>
 
-    <h1>Mohammed Ahmed</h1>
+    <div class="menu">
+        <ul>
+            <li><a href="https://codethedream.org/">Experience</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="">skills</a></li>
 
-    <section>
-        <h2>about</h2>
-        <p>My Name is Mohammed and I’ve been in the U.S for tow year and seven months, and I had the opportunity to
-            learn the javascript
-            and important aspects of the programming withe <em>code the dream</em><br></p>
-    </section>
+            <!-- <ion-icon name="logo-html5"></ion-icon>
+            <ion-icon name="logo-javascript"></ion-icon>
+            <ion-icon name="logo-css3">css</ion-icon> -->
+        </ul>
+    </div>
 
-    <img src="./resources/_117310488_16.jpg">
+    <header>
+        <h1>Mohammed Ahmed <br> <span></span> </h1>
+        <div class="icons">
+            <a href="https://github.com/mojahmed/intro-to-programming-apollo" target="blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="mailto:mojahmed93@gmail.com" target="blank">
+                <ion-icon name="mail-outline"></ion-icon>
+            </a>
+            <a href="#" target="blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+        </div>
+    </header>
 
 
-    <section>
-        <h2>Experience</h2>
+
+
+    <!-- <<img src="./resources/_117310488_16.jpg"> -->
+    <br>
+
+    <!-- <section class="expeience">
+        <h2 id="ex">Experience</h2>
+
         <ul>
             <li>
                 Code The Dream
-                <a href="https://codethedream.org/">click here</a>
+                <a target="blank" href="https://codethedream.org/">click here</a>
             </li>
         </ul>
     </section> -->
 
     <section id="skills">
-        <h2>skills</h2>
-        <ul></ul>
+
+        <h2 id="sk">skills</h2>
+        <ul>
+        </ul>
+    </section>
+
+
+    <section>
+
     </section>
 
     <section>
-        <h2>connect</h2>
-        <a href="mailto:mojahmed93@gmail.com">mojahmed93@gmail.com</a>
-    </section>
 
-    <section>
-        <h2>Leave a Message</h2>
         <form name="Leave_Message">
+            <fieldset>
+                <h2 id="leave_message">Leave a Message</h2>
+                <!-- <legend>Leave a Message</legend> -->
+                <label for="name"><br><input type="text" id="name=" name="user_name" required
+                        placeholder="your name"></label>
+                <br>
+                <label for="mail"><br><input type="email" id=mail name="user_email" required
+                        placeholder="Email Address"></label>
+                <br>
+                <label for="msg"><br><textarea id="msg" name="user_message" rows="5" cols="10"
+                        placeholder="Message"></textarea></label>
+                <br>
+                <button type="submit" id="submit">Submit</button>
+                </label>
 
 
-            <label for="name">Name:<br><input type="text" id="name=" name="user_name" required
-                    placeholder="your name"></label>
-            <br>
-            <label for="mail">Email:<br><input type="email" id=mail name="user_email" required
-                    placeholder="Email Address"></label>
-            <br>
-            <label for="msg">Message<br><textarea id="msg" name="user_message" rows="5" cols="10"></textarea></label>
-            <br>
-
-            <button type="submit">Submit</button>
-            </label>
 
 
 
+            </fieldset>
 
 
         </form>
@@ -68,15 +97,24 @@
     <section id="messages">
         <h2>Messages</h2>
         <ul>
-
         </ul>
+
+    </section>
+    <section>
 
     </section>
 
     <footer>
+
     </footer>
+    <section>
+        <!-- <a class="social" href="#" target="blank">
+            <ion-icon name="moon-outline"></ion-icon> -->
+    </section>
 
     <script src='./js/index.js'></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
