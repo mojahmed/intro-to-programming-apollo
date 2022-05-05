@@ -20,7 +20,7 @@ body {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.507) 50%, rgba(0, 0, 0, 0.507) 50%);
 }
 
-ul {
+.menu_list {
     float: left;
     display: flex;
     justify-content: center;
@@ -28,25 +28,41 @@ ul {
     position: relative;
     left: 350px;
     top: -10px;
+
 }
 
-ul li {
+.menu_list>li {
     list-style: none;
     margin-left: 62px;
     margin-top: 27px;
     font-size: 20px;
+
 }
 
-ul li a {
+.menu_list>li a {
     text-decoration: none;
     color: #fff;
     font-family: Arial;
     font-weight: bold;
     transition: 0.4s ease-in-out;
+
 }
 
-ul li a:hover {
+.menu_list>li a:hover {
     color: #ff7200;
+}
+
+button~.sub_menu {
+    color: #fff;
+    display: none;
+
+}
+
+button:focus~.sub_menu,
+button:hover~.sub_menu {
+    display: block;
+
+
 }
 
 
@@ -242,18 +258,23 @@ footer {
     position: relative;
     bottom: -150px;
     left: 350px;
+
 }
 
-#skillsbtn,
+#button,
 .icons ion-icon {
+    background-color: transparent;
     color: #fff;
     font-size: 30px;
     /* padding-left: 10px; */
     padding-top: 5px;
     transition: 0.3s ease;
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.507) 50%, rgba(0, 0, 0, 0.507) 50%); */
+
+
 }
 
-#skillsbtn:hover,
+#button:hover,
 .icons ion-icon:hover {
     color: #ff7200;
 }
@@ -278,22 +299,21 @@ footer {
     left: 0px;
 } */
 
-#skills {
+/* #skills {
     margin: 30px;
     /* position: relative;
     bottom: -80px;
     left: -700px; */
-    width: 20vw;
-    color: #ff7200;
-    position: inherit;
-}
+/* width: 20vw; */
+/* color: #ff7200; */
+/* position: inherit; */
 
-#skillsbtn a {
-    /* background-color:/ transparent; */
-    color: aliceblue;
+
+butt a {
+
+
     margin: .5em;
     text-decoration: none;
     /* color: #fff; */
-    padding: .5em;
-
+    /* padding: .5em; */
 }

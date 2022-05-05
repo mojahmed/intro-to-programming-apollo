@@ -13,16 +13,16 @@ if (footer) {
 }
 let skills = ["HTML", "Css", "JavaScript", "GitHub"];
 // let skillsList = skillsSection.querySelector("ul")
-const showSkills = () => {
+// const showSkills = () => {
 
-    let skillsSection = document.getElementById("skills");
-    for (let i = 0; i < skills.length; i++) {
-        let skill = document.createElement("li");
-        skill.textContent = skills[i];
-        skill.setAttribute("class", "skill")
-        skillsSection.appendChild(skill);
-    }
+let skillsSection = document.getElementById("skills");
+for (let i = 0; i < skills.length; i++) {
+    let skill = document.createElement("li");
+    skill.textContent = skills[i];
+    skill.setAttribute("class", "skill")
+    skillsSection.appendChild(skill);
 }
+
 
 
 
