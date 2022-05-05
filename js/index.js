@@ -11,17 +11,23 @@ if (footer) {
     footer.appendChild(copyright);
 
 }
+let skills = ["HTML", "Css", "JavaScript", "GitHub"];
+// let skillsList = skillsSection.querySelector("ul")
+const showSkills = () => {
 
-
-let skills = ["HTML", "Css", "JavaScript"];
-let skillsSection = document.getElementById("skills");
-let skillsList = skillsSection.querySelector("ul")
-
-for (let i = 0; i < skills.length; i++) {
-    let skill = document.createElement("li");
-    skill.textContent = skills[i];
-    skillsList = skillsList.appendChild(skill);
+    let skillsSection = document.getElementById("skills");
+    for (let i = 0; i < skills.length; i++) {
+        let skill = document.createElement("li");
+        skill.textContent = skills[i];
+        skill.setAttribute("class", "skill")
+        skillsSection.appendChild(skill);
+    }
 }
+
+
+
+
+
 
 
 let messageForm = document.getElementsByName("Leave_Message")[0];

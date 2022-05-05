@@ -1,5 +1,4 @@
 * {
-
     /* padding: 0px; */
     margin: 0px;
     box-sizing: border-box;
@@ -16,7 +15,7 @@ body {
 
     width: 100%;
     float: left;
-    height: 60px;
+    height: 15vh;
     /* background-image: linear-gradient(200deg, #E21143, #FFB03A); */
     background: linear-gradient(to top, rgba(0, 0, 0, 0.507) 50%, rgba(0, 0, 0, 0.507) 50%);
 }
@@ -74,9 +73,9 @@ fieldset {
     border: 1px solid rgb(255, 232, 57);
     display: inline;
     float: right;
-    position: relative;
-    top: -150px;
-    left: -50px;
+    position: absolute;
+    top: 30vh;
+    right: 10vw;
 }
 
 #leave_message {
@@ -245,6 +244,7 @@ footer {
     left: 350px;
 }
 
+#skillsbtn,
 .icons ion-icon {
     color: #fff;
     font-size: 30px;
@@ -253,6 +253,7 @@ footer {
     transition: 0.3s ease;
 }
 
+#skillsbtn:hover,
 .icons ion-icon:hover {
     color: #ff7200;
 }
@@ -266,8 +267,8 @@ footer {
 #messages {
     text-align: center;
     position: relative;
-    bottom: -250px;
-    left: 420px;
+    bottom: -280px;
+    left: 400px;
 
 }
 
@@ -279,9 +280,20 @@ footer {
 
 #skills {
     margin: 30px;
-    position: relative;
+    /* position: relative;
     bottom: -80px;
-    left: -700px;
-
+    left: -700px; */
+    width: 20vw;
     color: #ff7200;
+    position: inherit;
+}
+
+#skillsbtn a {
+    /* background-color:/ transparent; */
+    color: aliceblue;
+    margin: .5em;
+    text-decoration: none;
+    /* color: #fff; */
+    padding: .5em;
+
 }
