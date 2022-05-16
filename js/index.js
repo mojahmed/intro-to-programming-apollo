@@ -1,28 +1,33 @@
+// var today = new Date(); var time = today.getHours() + ":" + today
+
+
+
 let today = new Date();
 var thisYear = today.getFullYear();
 
 
 
-let footer = document.querySelector("footer");
+let footer = document.querySelector("#copyright");
 
 if (footer) {
     let copyright = document.createElement("p")
-    copyright.innerHTML = `© ${thisYear} Mohammed Ahmed`;
+    copyright.innerHTML = ` &copy; Mohammed Ahmed ${thisYear} `;
     footer.appendChild(copyright);
 
 }
-let skills = ["HTML", "Css", "JavaScript", "GitHub"];
-// let skillsList = skillsSection.querySelector("ul")
-const showSkills = () => {
+let skills = ["HTML", "CSS", "JavaScript", "Python", "GitHub"];
 
-    let skillsSection = document.getElementById("skills");
-    for (let i = 0; i < skills.length; i++) {
-        let skill = document.createElement("li");
-        skill.textContent = skills[i];
-        skill.setAttribute("class", "skill")
-        skillsSection.appendChild(skill);
-    }
+// const showSkills = () => {
+
+let skillsSection = document.getElementById("skills");
+let skillsList = skillsSection.querySelector("ul")
+for (let i = 0; i < skills.length; i++) {
+    let skill = document.createElement("li");
+    skill.textContent = skills[i];
+    skill.setAttribute("class", "skill")
+    skillsList.appendChild(skill);
 }
+
 
 
 
@@ -51,12 +56,24 @@ messageForm.addEventListener("submit", function (event) {
     messageList.appendChild(newMessage);
     let removeButton = document.createElement("button");
     removeButton.innerHTML = "remove";
+    // let editButton = document.createElement("button");
+    // editButton.innerHTML = "edit";
 
     removeButton.type = "button";
     removeButton.addEventListener("click", function (event) {
         let entry = removeButton.parentNode;
         entry.remove();
+
+
     });
+    // editButton.type = "button";
+    // editButton.addEventListener("click", function (event) {
+    //     let moh = editButton.parentNode;
+    //     moh.edit();
+    // });
+    // newMessage.appendChild(editButton);
+    // messageList.appendChild(newMessage);
+
 
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
