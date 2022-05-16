@@ -7,110 +7,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
     <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+    <!-- JavaScript Bundle  -->
 </head>
 
+
 <body>
-
-    <div class="menu">
-        <ul class="menu_list">
-            <li><a href="https://codethedream.org/">Experience</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li>
-                <button id="button">skills</button>
-                <ul id="skills" class="sub_menu">
-                </ul>
-            </li>
-
-
-            <!-- <ion-icon name="logo-html5"></ion-icon>
-            <ion-icon name="logo-javascript"></ion-icon>
-            <ion-icon name="logo-css3">css</ion-icon> -->
-        </ul>
-    </div>
-
+    <!-- ----Header Section---- -->
     <header>
-        <h1>Mohammed Ahmed <br> <span></span> </h1>
-        <div class="icons">
-            <a href="https://github.com/mojahmed/intro-to-programming-apollo" target="blank">
-                <ion-icon name="logo-github"></ion-icon>
-            </a>
-            <a href="mailto:mojahmed93@gmail.com" target="blank">
-                <ion-icon name="mail-outline"></ion-icon>
-            </a>
-            <a href="#" target="blank">
-                <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-        </div>
+        <nav>
+            <h1 class="nav-logo">
+                <img class="nav-pic" src="./resources/My project(5).png"> Mohammed Ahmed
+            </h1>
+            <ul class="menu-list">
+                <li class="menu-list-item"><a href="#about">About</a></li>
+                <li class="menu-list-item"><a href="#skills">Skills</a></li>
+                <li class="menu-list-item"><a href="#experience">Experience</a></li>
+                <li class="menu-list-item"><a href="#project">Project</a></li>
+                <li class="menu-list-item"><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
     </header>
-
-
-
-
-    <!-- <<img src="./resources/_117310488_16.jpg"> -->
-    <br>
-
-    <!-- <section class="expeience">
-        <h2 id="ex">Experience</h2>
-
-        <ul>
-            <li>
-                Code The Dream
-                <a target="blank" href="https://codethedream.org/">click here</a>
-            </li>
-        </ul>
-    </section> -->
-
-    <!-- <section id="skills">
-
-        <h2 id="sk">skills</h2>
-        <ul>
-        </ul>
-    </section> -->
-
-
-    <section>
-
     </section>
 
-    <section>
+    <!----------About----------- -->
+    <section id="about">
+        <div class="about-container">
+            <h2>About me</h2>
+            <p>First and foremost,I love writing code. Ever since writing my first program in <em>Python</em>. I had
+
+                <br>
+                learned JavaScript
+                and important aspects of the programming with <em>code the dream</em>.<br>
+
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- --------Skills---------- -->
+
+    <section id="skills">
+        <div>
+            <h2>Skills</h2>
+            <ul>
+            </ul>
+        </div>
+    </section>
+
+    <!-- --------------Project--------------------- -->
+    <section id="project">
+
+        <div class="my-project">
+            <h2>Project</h2>
+            <ul>
+                <li>
+                    <a target="blank"
+                        href="https://github.com/mojahmed/intro-to-programming-apollo">intro-to-programming-apollo</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- ----------------Experience------------------ -->
+    <section id="experience">
+
+        <h2>Experience</h2>
+        <ul class="experience-list">
+
+            <li class="new-style">
+                <span><strong>Lead Barista</strong>" — Refuge Coffee
+                    "</span>
+                <span class="span-date">Jan 2021-Current</span>
+            </li>
+
+            <li class="new-style">
+                <span><strong>Valet Supervisor</strong>" — Hilton
+                    "</span>
+                <span class="span-date">Mar 2020 - May 2021</span>
+            </li>
+
+            <li class="new-style">
+                <span><strong> Sales Associate</strong>" — For-U
+                    "</span>
+                <span class="span-date">Aug 2016 - May 2019 </span>
+
+            </li>
+            <li class="new-style">
+                <span><strong>Administrative Associate</strong>" — Al-Adeal Law Firm
+                    "</span>
+                <span class="span-date">Jun 2013- Oct 2015</span>
+
+            </li>
+        </ul>
+        </div>
+    </section>
+
+    <!-- ---------------Contact info---------------- -->
+
+    <section id="contact">
 
         <form name="Leave_Message">
-            <fieldset>
-                <h2 id="leave_message">Leave a Message</h2>
-                <!-- <legend>Leave a Message</legend> -->
-                <label for="name"><br><input type="text" id="name=" name="user_name" required
-                        placeholder="your name"></label>
-                <br>
-                <label for="mail"><br><input type="email" id=mail name="user_email" required
-                        placeholder="Email Address"></label>
-                <br>
-                <label for="msg"><br><textarea id="msg" name="user_message" rows="5" cols="10"
-                        placeholder="Message"></textarea></label>
-                <br>
-                <button type="submit" id="submit">Submit</button>
-                </label>
+            <h2>Leave a Message</h2>
+            <div class="flex">
+                <div class="label_one">
+                    <label for="name">Name<br><input type="text" id="name=" name="user_name" required></label>
+                    <br>
+                </div>
+                <div class="label_two">
+                    <label for="mail">Email Address<br><input type="email" id=mail name="user_email" required></label>
+                    <br>
+                </div>
+            </div>
 
-            </fieldset>
-
+            <label for="msg"><br><textarea id="msg" name="user_message" rows="5" cols="10"
+                    placeholder="Message"></textarea></label>
+            <br>
+            <button type="submit" id="submit">Submit</button>
+            </label>
         </form>
     </section>
+
+    <!-- --------------Messages----------------- -->
+
     <section id="messages">
-        <!-- <h2>Messages</h2> -->
-        <ul>
-        </ul>
-
-    </section>
-    <section>
-
+        <div class="new-messages">
+            <h2>Messages</h2>
+            <ul class="list_message">
+            </ul>
+        </div>
     </section>
 
+    <!-- --------------Footer and Icons--------------------- -->
     <footer>
+        <div>
+            <div class="footer-content">
+                <div id="copyright"></div>
 
+                <ul class="social-links">
+
+                    <li><a class="social-icon" href="https://github.com/mojahmed/intro-to-programming-apollo"
+                            target="blank">
+                            <ion-icon name="logo-github" size="large"></ion-icon>
+                        </a></li>
+                    <li><a class="social-icon" href="mailto:mojahmed93@gmail.com" target="blank">
+                            <ion-icon name="mail-outline" size="large"></ion-icon>
+                        </a></li>
+                    <li><a class="social-icon" href="#" target="blank">
+                            <ion-icon name="logo-linkedin" size="large"></ion-icon>
+                        </a></li>
+
+                </ul>
+            </div>
+
+        </div>
     </footer>
-    <section>
-        <!-- <a class="social" href="#" target="blank">
-            <ion-icon name="moon-outline"></ion-icon> -->
-    </section>
 
     <script src='./js/index.js'></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
