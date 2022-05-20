@@ -3,26 +3,28 @@ var thisYear = today.getFullYear();
 
 
 
-let footer = document.querySelector("footer");
+let footer = document.querySelector("#copyright");
 
 if (footer) {
     let copyright = document.createElement("p")
-    copyright.innerHTML = `© ${thisYear} Mohammed Ahmed`;
+    copyright.innerHTML = `&copy; Mohammed Ahmed ${thisYear}`;
     footer.appendChild(copyright);
 
 }
-let skills = ["HTML", "Css", "JavaScript", "GitHub"];
-// let skillsList = skillsSection.querySelector("ul")
-const showSkills = () => {
+let skills = ["HTML", "CSS", "JavaScript", "Python", "GitHub"];
 
-    let skillsSection = document.getElementById("skills");
-    for (let i = 0; i < skills.length; i++) {
-        let skill = document.createElement("li");
-        skill.textContent = skills[i];
-        skill.setAttribute("class", "skill")
-        skillsSection.appendChild(skill);
-    }
+// const showSkills = () => {
+
+let skillsSection = document.getElementById("skills");
+let skillsList = skillsSection.querySelector("ul");
+for (let i = 0; i < skills.length; i++) {
+
+    let skill = document.createElement("li");
+    skill.textContent = skills[i];
+    skill.setAttribute("class", "skill")
+    skillsList.appendChild(skill);
 }
+
 
 
 
@@ -50,6 +52,7 @@ messageForm.addEventListener("submit", function (event) {
     newMessage.innerHTML = `<a href= 'mailto:${email}'>${name}</a>  wrote: <span>${message}</span>`;
     messageList.appendChild(newMessage);
     let removeButton = document.createElement("button");
+    removeButton.classList.add("remove-button")
     removeButton.innerHTML = "remove";
 
     removeButton.type = "button";
@@ -61,3 +64,23 @@ messageForm.addEventListener("submit", function (event) {
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
 });
+fetch("https://api.github.com/users/mojahmed/repos")
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        console.log(data);
+        let projects = data
+
+        let projectSection = document.getElementById("projects");
+        let projectList = projectSection.querySelector("ul");
+        for (let i = 0; i < projects.length; i++) {
+
+            let projectElement = document.createElement("li");
+            projectElement.textContent = projects[i].name;
+            // projectElement.setAttribute("class", "skill")
+            projectList.appendChild(projectElement);
+        }
+    })
+
+
